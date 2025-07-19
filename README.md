@@ -12,8 +12,6 @@
 
 **🌃 MCA Student GLS University 🌃**
 
-**💻 Full Stack Developer in Training | AI/ML Enthusiast 💻**
-
 </div>
 
 ---
