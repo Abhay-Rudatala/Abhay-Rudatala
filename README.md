@@ -26,13 +26,6 @@ Status: MCA Student (Class of 2025)
 Base of Operations: GLS University
 Mission: To protect Gotham's digital infrastructure through code
 ```
-
-<div align="center">
-
-![Coding Batman](https://media.giphy.com/media/zOvBKUUEERdNm/giphy.gif)
-
-</div>
-
 ---
 
 ## ⚡ ARSENAL OF SKILLS
