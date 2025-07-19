@@ -3,7 +3,7 @@
 <div align="center">
 
 <p align="center">
- <img src="1119768.jpg" style="transform: rotate(90deg); transform-origin: center; display: block; margin: 0 auto;" width="800" alt="Batman Tech Banner"/>
+ <img src="Batman.jpg" style="transform: rotate(90deg); transform-origin: center; display: block; margin: 0 auto;" width="800" alt="Batman Tech Banner"/>
 </p>
 ### *"It's not who I am underneath, but what I do that defines me"*
 #### - Christopher Nolan's Batman
