@@ -1,5 +1,4 @@
-# 🦇 ABHAY RUDATALA - THE CODE CRUSADER 🦇
-
+# 🦇<img src="[Batman-2.jpg](https://icons8.com/icon/23965/batman)"/> ABHAY RUDATALA - THE CODE CRUSADER 🦇
 <div align="center">
 
 <p align="center">
