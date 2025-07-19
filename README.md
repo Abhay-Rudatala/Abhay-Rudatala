@@ -2,8 +2,9 @@
 
 <div align="center">
 
-![Batman Banner](https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=300&fit=crop&crop=center)
-
+<p align="center">
+ <img src="1119768.jpg" style="transform: rotate(90deg); transform-origin: center; display: block; margin: 0 auto;" width="800" alt="Batman Tech Banner"/>
+</p>
 ### *"It's not who I am underneath, but what I do that defines me"*
 #### - Christopher Nolan's Batman
 
