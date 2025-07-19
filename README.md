@@ -9,7 +9,7 @@
 
 ---
 
-**🌃 MCA Student | 2025 Graduate | GLS University 🌃**
+**🌃 MCA Student GLS University 🌃**
 
 **💻 Full Stack Developer in Training | AI/ML Enthusiast 💻**
 
@@ -21,7 +21,6 @@
 
 ```
 Name: Abhay Rudatala
-Alias: @Abhay-Rudatala
 Status: MCA Student (Class of 2025)
 Base of Operations: GLS University
 Mission: To protect Gotham's digital infrastructure through code
