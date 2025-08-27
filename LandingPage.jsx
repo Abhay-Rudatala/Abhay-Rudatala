@@ -39,11 +39,11 @@ const LandingPage = () => {
         <div className={landingPageStyles.headerContainer}>
           <div className={landingPageStyles.logoContainer}>
             <div className={`${landingPageStyles.logoIcon} ${isVisible ? 'animate-logo' : ''}`}>
-              <div className={landingPageStyles.logoIconInner}>
-                <FileText className={landingPageStyles.logoIconFile} />
-                <Sparkles className={landingPageStyles.logoIconSparkle} />
+              <div className="relative flex items-center justify-center w-full h-full">
+                <FileText className="w-5 h-5 text-white z-10" />
+                <Sparkles className="absolute -top-1 -right-1 w-4 h-4 text-yellow-400 animate-sparkle" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-glow"></div>
               </div>
-              <div className={landingPageStyles.logoGlow}></div>
             </div>
             <span className={`${landingPageStyles.logoText} ${isVisible ? 'animate-text' : ''}`}>
               ResumeCraft
@@ -120,7 +120,7 @@ const LandingPage = () => {
             {/* Left Content */}
             <div className={`${landingPageStyles.heroLeft} ${isVisible ? 'animate-slide-up' : ''}`}>
               <div className={`${landingPageStyles.tagline} ${isVisible ? 'animate-fade-in' : ''}`}>
-                <CheckCircle className={landingPageStyles.taglineIcon} size={16} />
+                <CheckCircle className="w-4 h-4" />
                 Professional Resume Builder
               </div>
 
@@ -146,7 +146,7 @@ const LandingPage = () => {
                     Start Building
                     <ArrowRight size={18} className={landingPageStyles.primaryButtonIcon} />
                   </span>
-                  <div className={landingPageStyles.buttonGlow}></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-button-glow"></div>
                 </button>
 
                 <button onClick={handleCTA} className={landingPageStyles.secondaryButton}>
@@ -162,7 +162,7 @@ const LandingPage = () => {
                   { value: '5 Min', label: 'Build Time', gradient: 'from-emerald-500 to-teal-500', icon: '⚡' }
                 ].map((stat, idx) => (
                   <div key={idx} className={`${landingPageStyles.statItem} ${isVisible ? `animate-stat-${idx + 1}` : ''}`}>
-                    <div className={landingPageStyles.statIcon}>{stat.icon}</div>
+                    <div className="text-2xl mb-2">{stat.icon}</div>
                     <div className={`${landingPageStyles.statNumber} ${stat.gradient}`}>{stat.value}</div>
                     <div className={landingPageStyles.statLabel}>{stat.label}</div>
                   </div>
@@ -175,53 +175,61 @@ const LandingPage = () => {
               <div className={landingPageStyles.heroIllustrationBg}></div>
               <div className={landingPageStyles.heroIllustrationContainer}>
                 {/* Floating Elements */}
-                <div className={landingPageStyles.floatingElement1}>
-                  <div className={landingPageStyles.floatingDot}></div>
+                <div className="absolute top-5 left-5 animate-float-element-1">
+                  <div className="w-3 h-3 bg-gradient-to-r from-orange-400 to-red-500 rounded-full shadow-lg shadow-orange-200"></div>
                 </div>
-                <div className={landingPageStyles.floatingElement2}>
-                  <div className={landingPageStyles.floatingSquare}></div>
+                <div className="absolute top-16 right-10 animate-float-element-2">
+                  <div className="w-4 h-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded shadow-lg shadow-violet-200"></div>
                 </div>
-                <div className={landingPageStyles.floatingElement3}>
-                  <div className={landingPageStyles.floatingTriangle}></div>
+                <div className="absolute bottom-10 left-16 animate-float-element-3">
+                  <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-b-[12px] border-l-transparent border-r-transparent border-b-emerald-500 shadow-lg shadow-emerald-200"></div>
                 </div>
 
                 {/* Main Resume Card */}
-                <div className={landingPageStyles.resumeCard}>
-                  <div className={landingPageStyles.resumeCardHeader}>
-                    <div className={landingPageStyles.resumeAvatar}></div>
-                    <div className={landingPageStyles.resumeHeaderText}>
-                      <div className={landingPageStyles.resumeName}>John Doe</div>
-                      <div className={landingPageStyles.resumeTitle}>Software Engineer</div>
+                <div className="bg-white rounded-3xl p-6 shadow-2xl shadow-violet-200/50 max-w-[320px] relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-violet-600 to-fuchsia-600"></div>
+                  
+                  <div className="flex items-center gap-4 mb-5">
+                    <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-full"></div>
+                    <div>
+                      <div className="text-lg font-semibold text-gray-800">John Doe</div>
+                      <div className="text-sm text-gray-600">Software Engineer</div>
                     </div>
                   </div>
                   
-                  <div className={landingPageStyles.resumeSection}>
-                    <div className={landingPageStyles.resumeSectionTitle}>Experience</div>
-                    <div className={landingPageStyles.resumeItem}>
-                      <div className={landingPageStyles.resumeItemTitle}>Senior Developer</div>
-                      <div className={landingPageStyles.resumeItemCompany}>Tech Corp • 2022-Present</div>
+                  <div className="mb-4">
+                    <div className="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wide">Experience</div>
+                    <div className="mb-2">
+                      <div className="text-sm font-medium text-gray-800">Senior Developer</div>
+                      <div className="text-xs text-gray-600">Tech Corp • 2022-Present</div>
                     </div>
                   </div>
 
-                  <div className={landingPageStyles.resumeSection}>
-                    <div className={landingPageStyles.resumeSectionTitle}>Skills</div>
-                    <div className={landingPageStyles.resumeSkills}>
-                      <span className={landingPageStyles.resumeSkill}>React</span>
-                      <span className={landingPageStyles.resumeSkill}>Node.js</span>
-                      <span className={landingPageStyles.resumeSkill}>Python</span>
+                  <div>
+                    <div className="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wide">Skills</div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">React</span>
+                      <span className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">Node.js</span>
+                      <span className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">Python</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Animated Icons */}
-                <div className={landingPageStyles.animatedIcon1}>
-                  <FileText className={landingPageStyles.iconFile} />
+                <div className="absolute top-10 right-16 animate-icon-float-1">
+                  <div className="w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
+                    <FileText className="w-5 h-5 text-violet-600" />
+                  </div>
                 </div>
-                <div className={landingPageStyles.animatedIcon2}>
-                  <LayoutTemplate className={landingPageStyles.iconTemplate} />
+                <div className="absolute top-32 right-6 animate-icon-float-2">
+                  <div className="w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
+                    <LayoutTemplate className="w-5 h-5 text-violet-600" />
+                  </div>
                 </div>
-                <div className={landingPageStyles.animatedIcon3}>
-                  <Download className={landingPageStyles.iconDownload} />
+                <div className="absolute bottom-20 right-20 animate-icon-float-3">
+                  <div className="w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center">
+                    <Download className="w-5 h-5 text-violet-600" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -307,14 +315,16 @@ const LandingPage = () => {
       {/* Footer */}
       <footer className={landingPageStyles.footer}>
         <div className={landingPageStyles.footerContainer}>
-          <div className={landingPageStyles.footerContent}>
-            <div className={landingPageStyles.footerLogo}>
-              <div className={landingPageStyles.footerLogoIcon}>
-                <FileText className={landingPageStyles.footerLogoIconInner} />
+          <div className="flex flex-col items-center gap-4 text-center">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-lg flex items-center justify-center">
+                <FileText className="w-4 h-4 text-white" />
               </div>
-              <span className={landingPageStyles.footerLogoText}>ResumeCraft</span>
+              <span className="text-lg font-semibold bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent">
+                ResumeCraft
+              </span>
             </div>
-            <div className={landingPageStyles.footerCopyright}>
+            <div className="text-sm text-gray-500 font-medium">
               © 2024 ResumeCraft. All rights reserved.
             </div>
           </div>

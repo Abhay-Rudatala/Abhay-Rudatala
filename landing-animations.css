@@ -1,0 +1,265 @@
+/* Landing Page Enhanced Animations */
+
+/* Logo Animations */
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes textSlideIn {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.4; }
+}
+
+.animate-logo {
+  animation: logoFloat 2s ease-in-out infinite;
+}
+
+.animate-text {
+  animation: textSlideIn 0.8s ease-out;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Hero Section Animations */
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes headingReveal {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes buttonsSlideUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes statsFadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 0.8s ease-out 0.3s both;
+}
+
+.animate-heading {
+  animation: headingReveal 1.2s ease-out;
+}
+
+.animate-buttons {
+  animation: buttonsSlideUp 0.8s ease-out 0.5s both;
+}
+
+.animate-stats {
+  animation: statsFadeIn 0.8s ease-out 0.8s both;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Individual Stat Animations */
+@keyframes statPop {
+  0% { opacity: 0; transform: scale(0.5); }
+  70% { transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-stat-1 {
+  animation: statPop 0.6s ease-out 1s both;
+}
+
+.animate-stat-2 {
+  animation: statPop 0.6s ease-out 1.2s both;
+}
+
+.animate-stat-3 {
+  animation: statPop 0.6s ease-out 1.4s both;
+}
+
+/* Feature Card Animations */
+@keyframes featureSlideIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-feature-1 {
+  animation: featureSlideIn 0.8s ease-out 0.2s both;
+}
+
+.animate-feature-2 {
+  animation: featureSlideIn 0.8s ease-out 0.4s both;
+}
+
+.animate-feature-3 {
+  animation: featureSlideIn 0.8s ease-out 0.6s both;
+}
+
+/* Floating Elements Animations */
+@keyframes floatElement {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(180deg); }
+}
+
+.animate-float-element-1 {
+  animation: floatElement 4s ease-in-out infinite;
+}
+
+.animate-float-element-2 {
+  animation: floatElement 4s ease-in-out infinite 1s;
+}
+
+.animate-float-element-3 {
+  animation: floatElement 4s ease-in-out infinite 2s;
+}
+
+/* Icon Float Animations */
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-8px) scale(1.05); }
+}
+
+.animate-icon-float-1 {
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+.animate-icon-float-2 {
+  animation: iconFloat 3s ease-in-out infinite 1s;
+}
+
+.animate-icon-float-3 {
+  animation: iconFloat 3s ease-in-out infinite 2s;
+}
+
+/* Button Glow Animation */
+@keyframes buttonGlow {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-button-glow {
+  animation: buttonGlow 2s ease-in-out infinite;
+}
+
+/* Enhanced Hover Effects */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+}
+
+/* Smooth Transitions */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Loading States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Focus States for Accessibility */
+button:focus,
+input:focus {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 2px;
+}
+
+/* Responsive Animations */
+@media (max-width: 768px) {
+  .animate-float-element-1,
+  .animate-float-element-2,
+  .animate-float-element-3 {
+    display: none;
+  }
+  
+  .animate-icon-float-1,
+  .animate-icon-float-2,
+  .animate-icon-float-3 {
+    display: none;
+  }
+}
+
+/* Performance Optimizations */
+.animate-logo,
+.animate-float,
+.animate-float-element-1,
+.animate-float-element-2,
+.animate-float-element-3,
+.animate-icon-float-1,
+.animate-icon-float-2,
+.animate-icon-float-3 {
+  will-change: transform;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo,
+  .animate-float,
+  .animate-float-element-1,
+  .animate-float-element-2,
+  .animate-float-element-3,
+  .animate-icon-float-1,
+  .animate-icon-float-2,
+  .animate-icon-float-3,
+  .animate-button-glow {
+    animation: none;
+  }
+  
+  .animate-slide-up,
+  .animate-fade-in,
+  .animate-fade-in-delay,
+  .animate-heading,
+  .animate-buttons,
+  .animate-stats,
+  .animate-stat-1,
+  .animate-stat-2,
+  .animate-stat-3,
+  .animate-feature-1,
+  .animate-feature-2,
+  .animate-feature-3 {
+    animation: fadeIn 0.5s ease-out;
+  }
+}
