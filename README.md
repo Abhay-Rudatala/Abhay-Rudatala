@@ -102,6 +102,23 @@ Current Focus: Deep Learning, NLP, Computer Vision
 
 ---
 
+### 💬 **Sentiment Analyzer - Deep Learning Emotion Intelligence**
+> *"Fine-tuned DistilBERT model for nuanced sentiment classification with emoji integration"*
+
+**Tech Stack:** DistilBERT • Transformers • Hugging Face Hub • Streamlit • Python • Deep Learning
+
+✨ **Key Features:**
+- **Fine-Tuned DistilBERT Model:** Custom-trained transformer model for precise sentiment classification
+- **Multi-Class Sentiment Detection:** Classifies text into Positive, Negative, and Neutral sentiments with high accuracy
+- **Emoji Integration:** Automatically generates contextual emojis based on detected sentiment and emotion
+- **Deployed on Hugging Face Hub:** Model files hosted and versioned for easy reproducibility and sharing
+- **Interactive Streamlit Dashboard:** Real-time sentiment analysis with visual emoji representations
+- **Transformer Intelligence:** Leverages state-of-the-art NLP for understanding context and nuance
+
+🔗 **Impact:** Bringing advanced transformer-based NLP to production with seamless user experience
+
+---
+
 <div align="center">
 
 ```
